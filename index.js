@@ -7,7 +7,7 @@ const foodRoutes = require('./src/routes/food');
 const clothesRoutes = require('./src/routes/clothes');
 const NotFoundHandler = require('./src/error-handlers/404');
 const ErrorHandler = require('./src/error-handlers/500');
-
+//dont need all the above since it's being brought in inside server
 const DATABASE_URL = process.env.NODE_ENV === 'test' ? 'sqlite:memory:' :process.env.DATABASE_URL;
 
 const sequelize = new Sequelize({

@@ -1,6 +1,9 @@
 const request = require('supertest');
 const app = require('../src/server');
 
+// I would declare a varibale called "server" here and not assign it value to hold the reference to the running sever 
+
+//the 'beforeAll((done) => as a jest b
 describe('Test the server routes', () => {
   it('should respond with 404 for an unknown route', async () => {
     const response = await request(app).get('/unknown');
